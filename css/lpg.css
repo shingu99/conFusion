@@ -1,0 +1,52 @@
+ body {
+  background-color: white;
+  z-index: 0; 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.6em;
+  overflow-x: hidden;
+ 
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 30px 0px;
+  border-bottom: 1px ridge;
+  min-height: 50px; 
+  }
+
+a:link{
+	color:blue;
+}
+a:hover{
+	color:red;
+}
+
+@media screen and (min-width:767px){
+	#ujj{display:block}
+}
+@media screen and (min-width:767px){
+	#giu{display:block}
+}
+@media screen and (min-width:767px){
+	#esv{display:block}
+}
+@media screen and (min-width:767px){
+	#scr{display:block}
+}
+@media screen and (min-width:767px){
+	#drr{display:block}
+}
+@media screen and (min-width:767px){
+	#or{display:block}
+}
+@media screen and (min-width:767px){
+	#rdtr{display:block}
+}
+
+.jumbotron{
+	background-color: #14498c;
+	color: white;
+	margin: 0px auto;
+	font-family: Comic sans ms;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+    <nav>
+      <ul class="topnav" id="list1">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#home">News</a></li>
+        <li><a href="#home">Contact</a></li>
+        <li><a href="#home">About</a></li>
+        <li class="topnav-right"><a href="#home">Sign Up</a></li>
+        <li class="topnav-right"><a href="#home">Sign In</a></li>
+        <li class="DDI"><a href="javascript:void(0);" onclick="drop()">&#9776;</a></li>
+      </ul>
+    </nav>
+
+<div class="container" id="gradient">
+  <div class="row">
+    <div class="col-6 ">
+      <div class="leftside">
+        <h1 class="large">May the force be with You!</h1>
+        <h1 class="large">Only a Sith deals in absolutes.</h1>
+      </div>
+      <form class="" >
+        <div class="leftside">
+          <h2>Username</h2>
+          <input type="text" name="username" value="" class="inputbox" placeholder="Username">
+          <h2>Password</h2>
+          <input type="text" name="username" value="" class="inputbox" placeholder="Password">
+        </div>
+      </form>
+    </div>
+    <div class="col-6">
+      <div class="rightside video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rEq1Z0bjdwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header>
+  <h1 class="JediHeader">Star Wars</h1>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div class="box">
+        <div class="icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Embl%C3%A8me_de_l%27Ordre_Jedi.svg/1200px-Embl%C3%A8me_de_l%27Ordre_Jedi.svg.png" alt="" width="110" height="110">
+        </div>
+        <label for="">Hello there!</label>
+        <p>For My Ally is the Force, and a Powerful Ally It Is. Rebellions are built on hope.</p>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="box">
+        <div class="icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Embl%C3%A8me_de_l%27Ordre_Jedi.svg/1200px-Embl%C3%A8me_de_l%27Ordre_Jedi.svg.png" alt="" width="110" height="110">
+        </div>
+        <label for="">May the Force be with you!</label>
+        <p>Do or Do not, There is no try. There is always a bigger fish. You were my brother Anakin!</p>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="box">
+        <div class="icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Embl%C3%A8me_de_l%27Ordre_Jedi.svg/1200px-Embl%C3%A8me_de_l%27Ordre_Jedi.svg.png" alt="" width="110" height="110">
+        </div>
+        <label for="">I am your Father.</label>
+        <p>Your lack of faith is disturbing. Be careful not to choke on your aspirations.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <button type="button" name="button" class="but1">Hope.</button>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="col-7">
+      <article>
+        <p>A young farm boy, who dreams of adventure, lives in a galaxy torn by rebellion and war. He is pushed into the conflict after his aunt and uncle are killed by the Empire for the droids he possesses. After joining a smuggler for cheap transportation, the boy and his mentor are captured by the Empire on their way to rescue a princess and, in the ensuing struggle, the mentor sacrifices himself. The boy and the smuggler save the princess and think they have escaped, only to learn the Empire has followed them to the Rebel base, intending to destroy the planet. Aided by his companions and the last lesson of his fallen mentor, the boy must exploit the hidden weakness of the Empire’s destructive weapon to preserve the Rebellion.</p>
+      </article>
+    </div>
+    <div class="col-5">
+      <div class="vader">
+        <img src="https://lumiere-a.akamaihd.net/v1/images/Darth-Vader_6bda9114.jpeg?region=0%2C23%2C1400%2C785&width=960" alt="" width="500" height="300">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="foot">
+<div class="row">
+
+  <div class="col-3 mobilestack">
+    <h1>Light side</h1>
+    <ul>
+      <li>About</li>
+      <li>Blogs</li>
+      <li>Careers</li>
+    </ul>
+  </div>
+
+  <div class="col-3 mobilestack">
+    <h1>Gray Jedi</h1>
+    <ul>
+      <li>About</li>
+      <li>Blogs</li>
+      <li>Careers</li>
+    </ul>
+  </div>
+
+  <div class="col-3 mobilestack">
+    <h1>Seperatists</h1>
+    <ul>
+      <li>About</li>
+      <li>Blogs</li>
+      <li>Careers</li>
+    </ul>
+  </div>
+
+  <div class="col-3 mobilestack">
+    <h1>Dark Side</h1>
+    <ul>
+      <li>About</li>
+      <li>Blogs</li>
+      <li>Careers</li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+    <script>
+    function drop(){
+      var x = document.getElementById("list1");
+      if(x.className === "topnav"){
+        x.className += " responsive";
+        // change topnav to topnav.responsive
+      }
+      else {
+        x.className= "topnav";
+      }
+    }
+    </script>
+
+  </body>
+</html>

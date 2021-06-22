@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LPG MIS</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lpg.css">
+<script language="javascript">
+function roload()
+{
+
+	if(map.ro.value != "-1") 
+	{
+		document.map.action="kycreport.jsp";
+		//document.map.target="top";
+		document.map.submit();
+	}
+}
+function zoneload()
+{
+	if(map.zone.value != "-1") 
+	{
+		document.map.action="kycreport.jsp";
+		//document.map.target="top";
+		document.map.submit();
+	}
+}
+function saload()
+{
+	if(map.sales.value != "-1") 
+	{
+		document.map.action="kycreport.jsp";
+		//document.map.target="top";
+		document.map.submit();
+	}
+}
+
+function submitForm()
+{
+if (document.getElementById('dashboard_type').checked) 
+{
+	document.map.action="kycreportdisp.jsp";
+	document.map.submit();
+}
+if (document.getElementById('dashboard_type1').checked) 
+{
+	document.map.action="giveitup/subsidy_opt_out_rpt.jsp";
+	document.map.submit();
+
+}
+if (document.getElementById('dashboard_type2').checked) 
+{
+	document.map.action="giveitup/subsidy_opt_out_rpt_zone.jsp";
+	document.map.submit();
+}
+if (document.getElementById('dashboard_type4').checked) 
+{
+	document.map.action="UJJWALA/Registration_Summary_n.jsp";
+	document.map.submit();
+}
+if (document.getElementById('dashboard_type5').checked) 
+{
+	document.map.action="UJJWALA/UJJWALA_1/Registration_Summary_AllIndia.jsp";
+	document.map.submit();
+}
+if (document.getElementById('dashboard_type3').checked) 
+{
+    document.map.report.value="dis_aad_sa";
+	document.map.action="kycreportdisp.jsp";
+	document.map.submit();
+}
+
+}
+</script>
+</head>
+
+<header class="jumbotron">
+	<div class="row">
+		<div class="col-4 col-sm-4"></div>
+		<div class="col-4 col-sm-4">
+		   <h4 style="font-size: 40px; text-align: center;">LPG MIS</h4>
+     	</div>
+	</div>
+</header>
+
+<body>
+  <form name="map" action="http://reg.hpcl.co.in/aadhaar_mis/kycreport.jsp" method="post">
+  	<div class="row row-content">
+  		
+  			<div class="col-12 col-sm-4">
+  				<div class="card mt-2">
+  						<h5 class="card-header bg-info" data-toggle="collapse" data-target="#ujj" style="color: white">UJJWALA Reports</h4>
+  					<div class="card-body collapse" style="background-color: #ffe4e1" id="ujj">
+  						<ol>
+	  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/PMGKY/PMGKY_Summary_Hourly.jsp" target="_new">PMGKY DashBoard (Hourly Status)</a><img src="./LPG MIS_files/NEW.gif"></li>
+	  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/PMGKY/PMGKY_Summary.jsp">PMGKY DashBoard</a><img src="./LPG MIS_files/NEW.gif"></li>
+	  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/Registration_Summary_n.jsp">PMUY Dashboard</a></li>
+	  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/bDCc87FmRrurfM5jDd.jsp?ConnectionType=N">Name Matching Status Report</a></li>
+	  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/bDCc87FmRrurfM5jDd.jsp?ConnectionType=H">Request Seeding Status(Hourly) Report</a></li>
+	  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/bDCc87FmRrurfM5jDd.jsp?ConnectionType=D">Attachments not uploaded(POA/POI/photo)</a></li>
+	  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/DealerPayments/ZoneWiseReport.jsp">Distributor Payment Report</a></li>
+	  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/bDCc87FmRrurfM5jDd.jsp?ConnectionType=E" target="_new">Error Records</a></li>
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/bDCc87FmRrurfM5jDd.jsp?ConnectionType=R" targt="_new">DedUp Suspect Records</a></li>
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/bDCc87FmRrurfM5jDd.jsp?ConnectionType=T" target="_new">AHL TIN Search</a></li>
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/MIS/ujjwala_summary.jsp">UJJWALA SV Summary(SC/ST/Other)</a></li>
+		
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/Registration_Summary_distributor_sa_all.jsp?NatureCode=16" target="_new">Distributorwise KYC HOLD Status</a></li>
+									
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/UJJWALA_sop2_opt.jsp" target="_new">Single Women/Partial Null - UJJWALA KYC </a></li>
+								 
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/InvalidData/PMUY_Blocking_Status.jsp" target="_new">Connection Blocking/Termination Status  </a></li>
+								 
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/PMAY_option.jsp" target="_new">PMAY - AHL TIN Not Used by any OMC  </a></li>
+								 
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/ExtendedPMUY_Summary.jsp" target="_new">PMUY - Extended Registration Status  </a></li>
+								 
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/Rating/GSA_Report.jsp" target="_new">GSA - Reports  </a></li>
+									
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/bDCc87FmRrurfM5jDd.jsp?ConnectionType=S" target="_new">View Registration Status Report</a></li>
+								 
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/SarvekshanAppReport/hqoreport.jsp" target="_new">Sarvekshan App Report</a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/DocUploadStatus/Zone_Report.jsp" target="_new">EPMUY Document Upload Status Report</a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/DocUploadStatus/LPG_Sahay_Yojna_Option.jsp" target="_new">Beneficiary List of LPG Sahay Yojna</a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/DocUploadStatus/Zone_5kg.jsp" target="_new">PMUY Conversion From 14.2 KG To 5 KG Status Report</a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/InvalidData/Select_sarea.jsp" target="_new">PMUY Beneficiaries - not uplifted any Refill after Installation </a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/Registration_Summary_district_haryana_oph.jsp" target="_new">Haryana - OPH </a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/Mobile_no_Status.jsp" target="_new"> Consumer Mobile No Status </a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/KYC_Saved_Status.jsp" target="_new">Saved KYC Status </a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/pmuyrep.jsp" target="_new">View EPMUY2 Documents </a></li>
+								 
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/pmuyrephp.jsp" target="_new">Verify EPMUY2 Documents </a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/PMUYVrf/landing_hp.jsp" target="_new">EPMUY2 Verification Workflow </a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/Daily_Refill_Status.jsp" target="_new">Daily Refill Sales/Stock </a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/File_Verification_Status_newformat.jsp" target="_new">File Verification Status </a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/Pending_Installation.jsp" target="_new">PMUY Pending KYC/Installation </a></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/Geo_Coordinates_Rpt_Dist.jsp" target="_new">Customers Geo-Coordinates </a><img src="./LPG MIS_files/NEW.gif"></li>
+								
+								<li><a href="http://reg.hpcl.co.in/aadhaar_mis/SarvekshanAppReport/SarvekshanDashboard/index_vitran.jsp" target="_new">HPGas Vitran App Dashboard (From 01/03/2020)</a><img src="./LPG MIS_files/NEW.gif"></li>
+  						</ol>
+  					</div>
+  				</div>
+  			</div>
+  			<div class=" col-12 col-sm-4">
+  				<div class="card mt-2">
+  						<h5 class="card-header bg-danger" data-toggle="collapse" data-target="#giu" style="color: white">Give It Up Reports</h4>
+  					<div class="card-body collapse" id="giu" style="background-color: #ff9999">
+  						<ol>
+  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/subsidy_opt_out_rpt.jsp">Give up Subsidy opt out dashboard</a></li>
+  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/subsidy_opt_sel.jsp">GIVEITUP Report (Statewise)</a></li>
+  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/subsidy_opt_out_rpt_distributor_all.jsp">GIVEITUP Report (Distributorwise)</a></li>
+  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/subsidy_opt_out_rpt_dist_all.jsp">GIVEITUP Report (Districtwise)</a></li>
+  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/giveitup_income.jsp">Giveitup Tax Slab Report</a></li>
+  							<li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/giveitup_mapping.jsp">GIVEITUP MAPPING STATEWISE Report</a></li>
+  						</ol>
+  					</div>
+  				</div>
+  				<div class="card mt-2">
+  						<h5 class="card-header bg-warning" data-toggle="collapse" data-target="#esv" style="color: white">eSV Reports</h4>
+  					<div class="card-body collapse" id="esv" style="background-color: #ffe7ba">
+  						<ol>
+  							<li>
+  								<a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/eSV_option.jsp">e-SV Application Status Report</a>
+  							</li>
+  							<li>
+  								<a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/eSV_status_updt.jsp"> e-SV Bank-Mandate Status Report</a>
+  							</li>
+  							<li>
+  								<a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/esvReport_web.jsp">e-SV Summary Report(Delhi)</a>
+  							</li>
+  							<li>
+  								<a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/esvReport_web_allstates.jsp">e-SV Summary Report(ALL INDIA)</a>
+  							</li>
+  							<li>
+  								<a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/payment_info.jsp">e-SV Payment Details</a>
+  							</li>
+  							<li>
+  								<a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/eKYC_report.jsp">eKYC Status Report</a>
+  							</li>
+  							<li>
+  								<a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/eKYC_zone_summary.jsp">eKYC Status -Zonewise</a>
+  							</li>
+  							<li>
+  								<a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/OTC_zone_summary.jsp">Connections Over the Counter Status -Zonewise</a>
+  							</li>
+  							<li>
+  								<a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/mandate_search.jsp">E-Mandate Status Search</a>
+  							</li>
+
+  						</ol>
+  					</div>
+  				</div>
+  				
+  				<div class="card mt-2">
+  					<h5 class="card-header bg-success" data-toggle="collapse" data-target="#drr" style="color: white">Distributor Rating Reports</h5>
+  					   <div class="card-body collapse" id="drr" style="background-color: #bdfcc9">
+  					   <ol>	
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/Rating/Rating_Report.jsp">Distributor Rating</a></li>
+  					   </ol>
+  					   </div>
+  				</div>
+  			</div>
+  			<div class="col-12 col-sm-4">
+  				<div class="card mt-2">
+  					<h5 class="card-header" data-toggle="collapse" data-target="#or" style="background-color: darkorchid; color: white">Other Reports</h5>
+  					   <div class="card-body collapse" id="or" style="background-color: #ffccff">
+  					   <ol>	
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/CSR_connection_summary.jsp">Weekly CSR Connections Report</a></li>
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/hig_decl_state.jsp">HIG Declaration (&gt;10,00,000)</a></li>
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/nctcreport.jsp">Aadhaar NCTC Monitoring Dashboard</a></li>
+  					    <li><a href="http://dcmsconstest.hpcl.co.in/DN/DCMSReports/Reports/Home.aspx">DISTRIBUTOR SYNC Monitoring</a></li>
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/Dedup/viewDuplicates_emp.jsp">Duplicate Connections</a><img src="./LPG MIS_files/NEW.gif"></li>
+  					   </ol>
+  					   </div>
+  				</div>
+  				<div class="card mt-2">
+  					<h5 class="card-header bg-primary" data-toggle="collapse" data-target="#rdtr" style="color: white">Refill/Digital Transaction Reports</h5>
+  					   <div class="card-body collapse" id="rdtr" style="background-color: #ccffff">
+  					   <ol>	
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/eSV_option.jsp">e-SV Application Status Report</a></li>
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/eSV_status_updt.jsp">e-SV Bank-Mandate Status Report</a></li>
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/esvReport_web.jsp">e-SV Summary Report(Delhi)</a></li>
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/giveitup/esvReport_web_allstates.jsp">e-SV Summary Report(ALL INDIA)</a></li>
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/payment_info.jsp">e-SV Payment Details</a></li>
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/eKYC_report.jsp">eKYC Status Report</a></li>
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/eKYC_zone_summary.jsp">eKYC Status -Zonewise</a></li>
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/OTC_zone_summary.jsp">Connections Over the Counter Status -Zonewise</a></li>
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/eSV/mandate_search.jsp">E-Mandate Status Search</a><img src="./LPG MIS_files/NEW.gif"></li>
+  					   </ol>
+  					   </div>
+  				</div>
+  				<div class="card">
+  					<h5 class="card-header mt-2" data-toggle="collapse" data-target="#scr" style="color:white; background-color:#ff8000">SOCIAL COPS Reports</h5>
+  					   <div class="card-body collapse" id="scr" style="background-color: #ffe4e1">
+  					   <ol>	
+  					    <li><a href="http://reg.hpcl.co.in/aadhaar_mis/UJJWALA/SocialCops/Zone_Summary.jsp">Social Cops Dashboard</a></li>
+  					   </ol>
+  					   </div>
+  				</div>
+  			</div>
+  		
+  	</div>
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
