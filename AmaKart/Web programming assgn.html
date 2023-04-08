@@ -1,393 +1,391 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AmaKart</title>
-<meta charset="utf-8">
+    <title>AmaKart</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="web.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="web.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body style="background-color:#fffff0 ;margin-top: 5px; overflow-x: hidden;">
 
-<div id="Cart" class="modal fade" role="dialog">
-	<div class="modal-dialog modal-lg" role="content" >
-		<div class="modal-content">
-			<div class="modal-header" style="background-color: red">
-				<h4 class="modal-title" style="margin-left: 20px; font-family: Courier; font-weight: bold;">Cart</h4>
-				<button type="button" class="close" id="closeM" data-dismiss="modal">
-					&times;
-				</button>
-			</div>
-			<div class="modal-body">
+    <div id="Cart" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: red">
+                    <h4 class="modal-title" style="margin-left: 20px; font-family: Courier; font-weight: bold;">Cart</h4>
+                    <button type="button" class="close" id="closeM" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
 
-					<label for="Items" style="text-align: center; font-size: 25px; margin:auto;">Items</label>
-					<br>
-					<ol id="itemlist">
-
-					</ol>
-					<button type="button" value="Checkout" style="background-color: red; color: white; padding: 5px; margin-left: 140px;" class="btn button">
-					Proceed to Checkout</button>
-
-
-			</div>
-		</div>
-	</div>
-</div>
+                    <label for="Items" style="text-align: center; font-size: 25px; margin:auto;">Items</label>
+                    <br>
+                    <ol id="itemlist">
+                    </ol>
+                    <button type="button" value="Checkout" style="background-color: red; color: white; padding: 5px; margin-left: 140px;" class="btn button">
+                        Proceed to Checkout
+                    </button>
 
 
-<header>
-	<div style="padding-top:17px;">
-			<h1 style="text-align: center; font-family: 'Press Start 2P', cursive; background-color: orchid; padding:5px; color:#990099;">AmaKart
-		</h1>
-
-		<a href="#" type="button" data-toggle="modal" data-target="#Cart" style="color: green; float: right; margin-right: 50px; font-size: 24px;"><span class="fa fa-shopping-cart fa-lg"></span>  Cart</a>
-	</div>
-</header>
-
-<div class="topnav" style="text-align: left; padding: 10px;">
-	<a href="Web programming assgn.html" class="button btn" style="color: black; text-decoration: none; padding: 5px; background-color: red; color: white;  font-family: Helvetica">Home</a>
-	<a href="about us.html" class="button btn" style="color: black; text-decoration: none; padding: 5px; background-color: red; color: white; margin-right: 20px; margin-left: 20px;  font-family: Helvetica">About</a>
-	<a href="contact.html" class="button btn" style="color: black; text-decoration: none; padding: 5px;background-color: red; color: white;  font-family: Helvetica">Contact Us</a>
-</div>
-<br>
-
-	<h2 style="text-align: center; font-family:serif">Best deals from Amazon and Flipkart</h2>
-	<br>
-<p style="text-align: center; font-size: 20px;" id="row1">
-				Hover mouse to find out more...
-			</p>
-		<div class="row row-content">
-		<div class="col-sm-4">
-			<a id="n20" href="https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B089MQ765M/ref=sr_1_2_sspa?dchild=1&keywords=note+20&qid=1597809954&s=electronics&sr=1-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzVEcxSEY2MzNDNDVVJmVuY3J5cHRlZElkPUEwMTE0ODMwM0pGMExNMlY4VVBPQyZlbmNyeXB0ZWRBZElkPUEwNTgyOTMzMTU1SVpDRjQyWUoxSyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" style=" text-decoration: none; color: black;" target="_blank" name="Samsung Galaxy Note 20 - Rs. 77999" onmouseover="disp1()" onmouseout="disp2()">
-				<img src="img\n20.png" width="400" height="400">
-			</a>
-		<button   class="mainscnbut"  onclick="addtocart()" style="">Add to Cart</button>
-		</div>
-		<div class="col-sm-4">
-			<a id="n20u" href="https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B089MQ7C7V/ref=sr_1_2_sspa?crid=IJGYAOBDQW2P&dchild=1&keywords=note+20&qid=1597810186&sprefix=note+%2Caps%2C336&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExWklOMVgzSUM5VDEmZW5jcnlwdGVkSWQ9QTAyNDkxMjQxVE83RDdNMDI3OUxPJmVuY3J5cHRlZEFkSWQ9QTA1ODMwMzMyQUFBWThVNFlGSkgmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl" name="Samsung Galaxy Note 20 Ultra - Rs. 104999" style="padding-left: 30px; text-decoration: none; color: black;" onmouseover="disp3()" onmouseout="disp2()" target="_blank">
-				<img src="img\n20u.png" width="400" height="400">
-			</a>
-			<button  class="mainscnbut"  onclick="addtocart2()" style="">Add to Cart</button>
-		</div>
-		<div class="col-sm-4">
-			<a id="c11" href="https://www.flipkart.com/realme-c11-rich-grey-32-gb/p/itm831d19fd9cdc4?pid=MOBFTAYBBVKFEGTZ&lid=LSTMOBFTAYBBVKFEGTZGKVKF9&marketplace=FLIPKART&srno=b_1_1&otracker=clp_banner_1_3.bannerX3.BANNER_mobile-phones-store_2C465F7Z7MCR&fm=neo%2Fmerchandising&iid=2413472f-5549-4295-a7c4-f4285123e09c.MOBFTAYBBVKFEGTZ.SEARCH&ppt=browse&ppn=browse&ssid=2akz1n5jdc0000001597810477541" name="Realme C11 - Rs. 7499" style="text-decoration: none; color: black;" onmouseover="disp4()" onmouseout="disp2()" target="_blank">
-				<img src="img\c11.png" style="margin-left:40px;">
-			</a>
-			<button  class="mainscnbut"  onclick="addtocart3()" style="margin-left: 115px;" >Add to Cart</button>
-		</div>
-
-		</div>
-
-	<br>
-
-	<p style="text-align: center; font-size: 20px;" id="row2">
-			Hover mouse to find out more...
-			</p>
-		<div class="row align-items-center row-content">
-		  <div class="col-sm-4">
-			<a id="nord" href="https://www.amazon.in/OnePlus-Nord-Gray-128GB-Storage/dp/B08695ZSP6/ref=lp_21837212031_1_1?s=electronics&ie=UTF8&qid=1596962722&sr=1-1" name="OnePlus Nord - Rs. 27999" style=" text-decoration: none; color: black;  " onmouseover="disp5()" onmouseout="disp2()" target="_blank">
-			<img src="img\nord.png" width="400" height="400">
-			</a>
-			<button class="mainscnbut" onclick="addtocart4()" style="">Add to Cart</button>
-		  </div>
-
-		  <div class="col-sm-4">
-		<a id="se" href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d?pid=MOBFRFXHCKWDAC4A&lid=LSTMOBFRFXHCKWDAC4AEQROVZ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=69435f8f-e87f-447b-bf37-b7b54d1a108f.MOBFRFXHCKWDAC4A.SEARCH&ppt=sp&ppn=sp&ssid=vyvdi0nz4g0000001596963671042&qH=417360a05fc3522d" name="iPhone SE Rs. 36999" style="margin-left: 35px;  text-decoration: none; color: black;  " onmouseover="disp6()" onmouseout="disp2()" target="_blank">
-			<img src="img\se.jpg" width="400" height="450">
-		</a>
-		<button class="mainscnbut"  onclick="addtocart5()" style="">Add to Cart</button>
-	      </div>
-	      <div class="col-sm-4">
-		<a id="m31s" href="https://www.amazon.in/Samsung-Galaxy-Ocean-Blue-Storage/dp/B07HGJKDQL/ref=lp_17033333031_1_6?s=electronics&ie=UTF8&qid=1596965098&sr=1-6" name="Samsung Galaxy M31s - Rs. 13499" style="  text-decoration: none; color: black;" onmouseover="disp7()" onmouseout="disp2()" target="_blank">
-			<img src="img\m31.jpg" width="400" height="400">
-		</a>
-		<button class="mainscnbut"  onclick="addtocart6()" style="">Add to Cart</button>
-	    </div>
-	</div>
-
-		<br>
-
-		<p style="text-align: center; font-size: 20px;" id="row3">
-			 Hover mouse to find out more...
-			</p>
-		<div class="row align-items-center row-content">
-			<div class="col-sm-4">
-		<a id="8pro" href="https://www.amazon.in/Test-Exclusive-750/dp/B07DJCYBVK/ref=sr_1_3?dchild=1&keywords=oneplus+8+pro&qid=1596965332&s=electronics&sr=1-3" name="OnePlus 8 Pro - Rs. 54999" style="text-decoration: none; color: black;" target="_blank" onmouseover="disp8()" onmouseout="disp2()">
-			<img src="img\8pro.jpg" width="400" height="400">
-		</a>
-			<button class="mainscnbut"  onclick="addtocart7()" style="">Add to Cart</button>
-			</div>
-			<div class="col-sm-4">
-		<a id="11" href="https://www.amazon.in/Apple-iPhone-11-64GB-Black/dp/B07XVMDRZY/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11&qid=1596965437&s=electronics&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExRVo2VVNENE1WQ0M0JmVuY3J5cHRlZElkPUEwMzg5NjUyMlhRV0gyS0pFVEQ5MyZlbmNyeXB0ZWRBZElkPUEwNDgyMzkwM1BTODg1QU9IT09DSCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" name="iPhone 11 - Rs. 62900" onmouseover="disp9()" onmouseout="disp2()" style=" text-decoration: none; color: black;" target="_blank">
-			<img src="img\11.png" width="400" height="400">
-		</a>
-		<button class="mainscnbut"  onclick="addtocart8()" style="">Add to Cart</button>
-			</div>
-			<div class="col-sm-4">
-		<a id="s20" href="https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B08445DF23/ref=sr_1_1_sspa?dchild=1&keywords=s20&qid=1596965536&s=electronics&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyWThNSzJPNjVGSjNBJmVuY3J5cHRlZElkPUEwNTc5NTk2MlA1TUdOUkVYQUw2RCZlbmNyeXB0ZWRBZElkPUEwMDc4NDI4NlFRQktJQ0FJVjk2JndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" name="Samsung Galaxy S20 - Rs. 70490" onmouseover="disp10()" onmouseout="disp2()" style=" text-decoration: none; color: black;" target="_blank">
-			<img src="img\s20.png" width="350" height="350">
-		</a>
-<button  class="mainscnbut" onclick="addtocart9()" style="">Add to Cart</button>
-	</div>
-
-	</div>
-	<br>
-	<p style="text-align: center; font-size: 20px;" id="row4">
-				Hover mouse to find out more...
-			</p>
-		<div class="row align-items-center row-content">
-			<div class="col-sm-4">
-		<a id="echo" href="https://www.amazon.in/All-new-Echo-Dot-3rd-Gen/dp/B07PFFMP9P/ref=sr_1_1?dchild=1&keywords=echo&qid=1596964557&sr=8-1" name="Amazon Echo dot 3rd Gen - Rs. 2999" style="text-decoration: none; color: black;" target="_blank" onmouseover="disp11()" onmouseout="disp2()">
-			<img src="img\echo.png" width="400" height="400">
-		</a>
-			<button class="mainscnbut"  onclick="addtocart10()" style="">Add to Cart</button>
-		</div>
-		<div class="col-sm-4">
-		<a id="nest" href="https://www.flipkart.com/google-nest-mini-2nd-gen/p/itm4dc423dadf477?pid=ATNFM44TKMMUSAJK&lid=LSTATNFM44TKMMUSAJKZXLHXR&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=1139aaa4-d746-4bfd-b70b-a39a61ada61b.ATNFM44TKMMUSAJK.SEARCH&ppt=sp&ppn=sp&ssid=96572be94g0000001596962562759&qH=87b04564a90819e6" style=" text-decoration: none; color: black; " name="Google Nest Mini - Rs. 3999" target="_blank" onmouseover="disp12()" onmouseout="disp2()">
-				<img src="img\mini.png" width="400" height="150">
-			</a>
-	<button class="mainscnbut"  onclick="addtocart11()" style="">Add to Cart</button>
-		</div>
-
-		<div class="col-sm-4">
-		<a id="tuf" href="https://www.amazon.in/FX505DT-Graphics-5-3550H-Windows-FX505DT-AL106T/dp/B07RTYFS9S/ref=sr_1_8?dchild=1&keywords=asus+g14&qid=1596964718&sr=8-8" name="ASUS TUF Gaming FX505DT - Rs. 65999" style=" text-decoration: none; color: black;" target="_blank" onmouseover="disp13()" onmouseout="disp2()">
-			<img src="img\tuf.png" width="350" height="250">
-		</a>
-		<button class="mainscnbut"  onclick="addtocart12()">Add to Cart</button>
-
-	</div>
-
-		</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <script>
-  	function disp1()
-  	{
+    <header>
+        <div style="padding-top:17px;">
+            <h1 style="text-align: center; font-family: 'Press Start 2P', cursive; background-color: orchid; padding:5px; color:#990099;">
+                AmaKart
+            </h1>
 
-  		document.getElementById("row1").innerHTML=document.getElementById("n20").name;
+            <a href="#" type="button" data-toggle="modal" data-target="#Cart" style="color: green; float: right; margin-right: 50px; font-size: 24px;"><span class="fa fa-shopping-cart fa-lg"></span>  Cart</a>
+        </div>
+    </header>
 
-  	}
+    <div class="topnav" style="text-align: left; padding: 10px;">
+        <a href="Web programming assgn.html" class="button btn" style="color: black; text-decoration: none; padding: 5px; background-color: red; color: white;  font-family: Helvetica">Home</a>
+        <a href="about us.html" class="button btn" style="color: black; text-decoration: none; padding: 5px; background-color: red; color: white; margin-right: 20px; margin-left: 20px;  font-family: Helvetica">About</a>
+        <a href="contact.html" class="button btn" style="color: black; text-decoration: none; padding: 5px;background-color: red; color: white;  font-family: Helvetica">Contact Us</a>
+    </div>
+    <br>
 
-  	function disp3()
-  	{
+    <h2 style="text-align: center; font-family:serif">Best deals from Amazon and Flipkart</h2>
+    <br>
+    <p style="text-align: center; font-size: 20px;" id="row1">
+        Hover mouse to find out more...
+    </p>
 
-  		document.getElementById("row1").innerHTML=document.getElementById("n20u").name;
+    <div class="row row-content">
+        <p class="offset-5 col-sm-1">Name</p>
+        <input type="text" name="name" id="n" class="col-sm-2">
+    </div>
+    <div class="row row-content">
+        <p class="col-sm-2">How would you like to pay?</p>
+        <input type="radio" id="cash" name="payment">
+        <label for="cash" class="col-sm-1">Cash</label><br>
+        <input type="radio" id="card" name="payment">
+        <label for="card" class="col-sm-1">Card</label><br>
+        <input type="radio" id="pp" name="payment">
+        <label for="pp" class="col-sm-2">PayPal</label><br><br>
 
-  	}
+        <p class="col-sm-2">Tick appropriate checkboxes</p>
+        <input type="checkbox" id="delivery" name="vehicle1" value="Bike">
+        <label for="delivery" class="col-sm-1"> Get it in 2 days</label><br>
+        <input type="checkbox" id="door" name="vehicle2" value="Car">
+        <label for="door" class="col-sm-2"> Delivered on your doorstep</label><br>
 
-  	function disp4()
-  	{
+    </div>
 
-  		document.getElementById("row1").innerHTML=document.getElementById("c11").name;
+    <div class="row row-content">
+        <div class="col-sm-4">
+            <a id="n20" href="https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B089MQ765M/ref=sr_1_2_sspa?dchild=1&keywords=note+20&qid=1597809954&s=electronics&sr=1-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzVEcxSEY2MzNDNDVVJmVuY3J5cHRlZElkPUEwMTE0ODMwM0pGMExNMlY4VVBPQyZlbmNyeXB0ZWRBZElkPUEwNTgyOTMzMTU1SVpDRjQyWUoxSyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" style=" text-decoration: none; color: black;" target="_blank" name="Samsung Galaxy Note 20 - Rs. 77999" onmouseover="disp1()" onmouseout="disp2()">
+                <img src="img\n20.png" width="400" height="400">
+            </a>
+            <button class="mainscnbut" onclick="addtocart()" style="">Add to Cart</button>
+        </div>
+        <div class="col-sm-4">
+            <a id="n20u" href="https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B089MQ7C7V/ref=sr_1_2_sspa?crid=IJGYAOBDQW2P&dchild=1&keywords=note+20&qid=1597810186&sprefix=note+%2Caps%2C336&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExWklOMVgzSUM5VDEmZW5jcnlwdGVkSWQ9QTAyNDkxMjQxVE83RDdNMDI3OUxPJmVuY3J5cHRlZEFkSWQ9QTA1ODMwMzMyQUFBWThVNFlGSkgmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl" name="Samsung Galaxy Note 20 Ultra - Rs. 104999" style="padding-left: 30px; text-decoration: none; color: black;" onmouseover="disp3()" onmouseout="disp2()" target="_blank">
+                <img src="img\n20u.png" width="400" height="400">
+            </a>
+            <button class="mainscnbut" onclick="addtocart2()" style="">Add to Cart</button>
+        </div>
+        <div class="col-sm-4">
+            <a id="c11" href="https://www.flipkart.com/realme-c11-rich-grey-32-gb/p/itm831d19fd9cdc4?pid=MOBFTAYBBVKFEGTZ&lid=LSTMOBFTAYBBVKFEGTZGKVKF9&marketplace=FLIPKART&srno=b_1_1&otracker=clp_banner_1_3.bannerX3.BANNER_mobile-phones-store_2C465F7Z7MCR&fm=neo%2Fmerchandising&iid=2413472f-5549-4295-a7c4-f4285123e09c.MOBFTAYBBVKFEGTZ.SEARCH&ppt=browse&ppn=browse&ssid=2akz1n5jdc0000001597810477541" name="Realme C11 - Rs. 7499" style="text-decoration: none; color: black;" onmouseover="disp4()" onmouseout="disp2()" target="_blank">
+                <img src="img\c11.png" style="margin-left:40px;">
+            </a>
+            <button class="mainscnbut" onclick="addtocart3()" style="margin-left: 115px;">Add to Cart</button>
+        </div>
 
-  	}
-  	function disp5()
-  	{
+    </div>
 
-  		document.getElementById("row2").innerHTML=document.getElementById("nord").name;
+    <br>
 
-  	}
-function disp6()
-  	{
+    <p style="text-align: center; font-size: 20px;" id="row2">
+        Hover mouse to find out more...
+    </p>
+    <div class="row align-items-center row-content">
+        <div class="col-sm-4">
+            <a id="nord" href="https://www.amazon.in/OnePlus-Nord-Gray-128GB-Storage/dp/B08695ZSP6/ref=lp_21837212031_1_1?s=electronics&ie=UTF8&qid=1596962722&sr=1-1" name="OnePlus Nord - Rs. 27999" style=" text-decoration: none; color: black;  " onmouseover="disp5()" onmouseout="disp2()" target="_blank">
+                <img src="img\nord.png" width="400" height="400">
+            </a>
+            <button class="mainscnbut" onclick="addtocart4()" style="">Add to Cart</button>
+        </div>
 
-  		document.getElementById("row2").innerHTML=document.getElementById("se").name;
+        <div class="col-sm-4">
+            <a id="se" href="https://www.flipkart.com/apple-iphone-se-black-64-gb/p/itm832dd5963a08d?pid=MOBFRFXHCKWDAC4A&lid=LSTMOBFRFXHCKWDAC4AEQROVZ&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=69435f8f-e87f-447b-bf37-b7b54d1a108f.MOBFRFXHCKWDAC4A.SEARCH&ppt=sp&ppn=sp&ssid=vyvdi0nz4g0000001596963671042&qH=417360a05fc3522d" name="iPhone SE Rs. 36999" style="margin-left: 35px;  text-decoration: none; color: black;  " onmouseover="disp6()" onmouseout="disp2()" target="_blank">
+                <img src="img\se.jpg" width="400" height="450">
+            </a>
+            <button class="mainscnbut" onclick="addtocart5()" style="">Add to Cart</button>
+        </div>
+        <div class="col-sm-4">
+            <a id="m31s" href="https://www.amazon.in/Samsung-Galaxy-Ocean-Blue-Storage/dp/B07HGJKDQL/ref=lp_17033333031_1_6?s=electronics&ie=UTF8&qid=1596965098&sr=1-6" name="Samsung Galaxy M31s - Rs. 13499" style="  text-decoration: none; color: black;" onmouseover="disp7()" onmouseout="disp2()" target="_blank">
+                <img src="img\m31.jpg" width="400" height="400">
+            </a>
+            <button class="mainscnbut" onclick="addtocart6()" style="">Add to Cart</button>
+        </div>
+    </div>
 
-  	}
-  	function disp7()
-  	{
+    <br>
 
-  		document.getElementById("row2").innerHTML=document.getElementById("m31s").name;
+    <p style="text-align: center; font-size: 20px;" id="row3">
+        Hover mouse to find out more...
+    </p>
+    <div class="row align-items-center row-content">
+        <div class="col-sm-4">
+            <a id="8pro" href="https://www.amazon.in/Test-Exclusive-750/dp/B07DJCYBVK/ref=sr_1_3?dchild=1&keywords=oneplus+8+pro&qid=1596965332&s=electronics&sr=1-3" name="OnePlus 8 Pro - Rs. 54999" style="text-decoration: none; color: black;" target="_blank" onmouseover="disp8()" onmouseout="disp2()">
+                <img src="img\8pro.jpg" width="400" height="400">
+            </a>
+            <button class="mainscnbut" onclick="addtocart7()" style="">Add to Cart</button>
+        </div>
+        <div class="col-sm-4">
+            <a id="11" href="https://www.amazon.in/Apple-iPhone-11-64GB-Black/dp/B07XVMDRZY/ref=sr_1_1_sspa?dchild=1&keywords=iphone+11&qid=1596965437&s=electronics&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExRVo2VVNENE1WQ0M0JmVuY3J5cHRlZElkPUEwMzg5NjUyMlhRV0gyS0pFVEQ5MyZlbmNyeXB0ZWRBZElkPUEwNDgyMzkwM1BTODg1QU9IT09DSCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" name="iPhone 11 - Rs. 62900" onmouseover="disp9()" onmouseout="disp2()" style=" text-decoration: none; color: black;" target="_blank">
+                <img src="img\11.png" width="400" height="400">
+            </a>
+            <button class="mainscnbut" onclick="addtocart8()" style="">Add to Cart</button>
+        </div>
+        <div class="col-sm-4">
+            <a id="s20" href="https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B08445DF23/ref=sr_1_1_sspa?dchild=1&keywords=s20&qid=1596965536&s=electronics&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyWThNSzJPNjVGSjNBJmVuY3J5cHRlZElkPUEwNTc5NTk2MlA1TUdOUkVYQUw2RCZlbmNyeXB0ZWRBZElkPUEwMDc4NDI4NlFRQktJQ0FJVjk2JndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" name="Samsung Galaxy S20 - Rs. 70490" onmouseover="disp10()" onmouseout="disp2()" style=" text-decoration: none; color: black;" target="_blank">
+                <img src="img\s20.png" width="350" height="350">
+            </a>
+            <button class="mainscnbut" onclick="addtocart9()" style="">Add to Cart</button>
+        </div>
 
-  	}
+    </div>
+    <br>
+    <p style="text-align: center; font-size: 20px;" id="row4">
+        Hover mouse to find out more...
+    </p>
+    <div class="row align-items-center row-content">
+        <div class="col-sm-4">
+            <a id="echo" href="https://www.amazon.in/All-new-Echo-Dot-3rd-Gen/dp/B07PFFMP9P/ref=sr_1_1?dchild=1&keywords=echo&qid=1596964557&sr=8-1" name="Amazon Echo dot 3rd Gen - Rs. 2999" style="text-decoration: none; color: black;" target="_blank" onmouseover="disp11()" onmouseout="disp2()">
+                <img src="img\echo.png" width="400" height="400">
+            </a>
+            <button class="mainscnbut" onclick="addtocart10()" style="">Add to Cart</button>
+        </div>
+        <div class="col-sm-4">
+            <a id="nest" href="https://www.flipkart.com/google-nest-mini-2nd-gen/p/itm4dc423dadf477?pid=ATNFM44TKMMUSAJK&lid=LSTATNFM44TKMMUSAJKZXLHXR&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=1139aaa4-d746-4bfd-b70b-a39a61ada61b.ATNFM44TKMMUSAJK.SEARCH&ppt=sp&ppn=sp&ssid=96572be94g0000001596962562759&qH=87b04564a90819e6" style=" text-decoration: none; color: black; " name="Google Nest Mini - Rs. 3999" target="_blank" onmouseover="disp12()" onmouseout="disp2()">
+                <img src="img\mini.png" width="400" height="150">
+            </a>
+            <button class="mainscnbut" onclick="addtocart11()" style="">Add to Cart</button>
+        </div>
 
-  	function disp8()
-  	{
+        <div class="col-sm-4">
+            <a id="tuf" href="https://www.amazon.in/FX505DT-Graphics-5-3550H-Windows-FX505DT-AL106T/dp/B07RTYFS9S/ref=sr_1_8?dchild=1&keywords=asus+g14&qid=1596964718&sr=8-8" name="ASUS TUF Gaming FX505DT - Rs. 65999" style=" text-decoration: none; color: black;" target="_blank" onmouseover="disp13()" onmouseout="disp2()">
+                <img src="img\tuf.png" width="350" height="250">
+            </a>
+            <button class="mainscnbut" onclick="addtocart12()">Add to Cart</button>
 
-  		document.getElementById("row3").innerHTML=document.getElementById("8pro").name;
+        </div>
 
-  	}
-  	function disp9()
-  	{
+    </div>
 
-  		document.getElementById("row3").innerHTML=document.getElementById("11").name;
 
-  	}
-  	function disp10()
-  	{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script>
+        function disp1() {
 
-  		document.getElementById("row3").innerHTML=document.getElementById("s20").name;
+            document.getElementById("row1").innerHTML = document.getElementById("n20").name;
 
-  	}
-  		function disp11()
-  	{
+        }
 
-  		document.getElementById("row4").innerHTML=document.getElementById("echo").name;
+        function disp3() {
 
-  	}
-  	function disp12()
-  	{
+            document.getElementById("row1").innerHTML = document.getElementById("n20u").name;
 
-  		document.getElementById("row4").innerHTML=document.getElementById("nest").name;
+        }
 
-  	}
-  	function disp13()
-  	{
+        function disp4() {
 
-  		document.getElementById("row4").innerHTML=document.getElementById("tuf").name;
+            document.getElementById("row1").innerHTML = document.getElementById("c11").name;
 
-  	}
-  	function disp2()
-  	{
-  		document.getElementById("row1").innerHTML="Hover mouse to find out more...";
-  		document.getElementById("row2").innerHTML="Hover mouse to find out more...";
-  		document.getElementById("row3").innerHTML="Hover mouse to find out more...";
-  		document.getElementById("row4").innerHTML="Hover mouse to find out more...";
-  	}
+        }
+        function disp5() {
 
-  	function addtocart()
-  	{
-  	var ul = document.getElementById("itemlist");
-    var phone = document.getElementById("n20");
-    var li = document.createElement("li");
-    li.setAttribute('id',phone.name);
-    li.appendChild(document.createTextNode(phone.name));
-    ul.appendChild(li);
-    alert(phone.name + " has been added to the cart.");
-  	}
+            document.getElementById("row2").innerHTML = document.getElementById("nord").name;
 
-  	function addtocart2()
-  	{
-  	var ul = document.getElementById("itemlist");
-    var phone = document.getElementById("n20u");
-    var li = document.createElement("li");
-    li.setAttribute('id',phone.name);
-    li.appendChild(document.createTextNode(phone.name));
-    ul.appendChild(li);
-    alert(phone.name + " has been added to the cart.");
-  	}
+        }
+        function disp6() {
 
-  	function addtocart3()
-  	{
-  	var ul = document.getElementById("itemlist");
-    var phone = document.getElementById("c11");
-    var li = document.createElement("li");
-    li.setAttribute('id',phone.name);
-    li.appendChild(document.createTextNode(phone.name));
-    ul.appendChild(li);
-    alert(phone.name + " has been added to the cart.");
-  	}
+            document.getElementById("row2").innerHTML = document.getElementById("se").name;
 
-  	function addtocart4()
-  	{
-  	var ul = document.getElementById("itemlist");
-    var phone = document.getElementById("nord");
-    var li = document.createElement("li");
-    li.setAttribute('id',phone.name);
-    li.appendChild(document.createTextNode(phone.name));
-    ul.appendChild(li);
-    alert(phone.name + " has been added to the cart.");
-  	}
+        }
+        function disp7() {
 
-  	function addtocart5()
-  	{
-  	var ul = document.getElementById("itemlist");
-    var phone = document.getElementById("se");
-    var li = document.createElement("li");
-    li.setAttribute('id',phone.name);
-    li.appendChild(document.createTextNode(phone.name));
-    ul.appendChild(li);
-    alert(phone.name + " has been added to the cart.");
-  	}
+            document.getElementById("row2").innerHTML = document.getElementById("m31s").name;
 
-  	function addtocart6()
-  	{
-  	var ul = document.getElementById("itemlist");
-    var phone = document.getElementById("m31s");
-    var li = document.createElement("li");
-    li.setAttribute('id',phone.name);
-    li.appendChild(document.createTextNode(phone.name));
-    ul.appendChild(li);
-    alert(phone.name + " has been added to the cart.");
-  	}
+        }
 
-  	function addtocart7()
-  	{
-  	var ul = document.getElementById("itemlist");
-    var phone = document.getElementById("8pro");
-    var li = document.createElement("li");
-    li.setAttribute('id',phone.name);
-    li.appendChild(document.createTextNode(phone.name));
-    ul.appendChild(li);
-    alert(phone.name + " has been added to the cart.");
-  	}
+        function disp8() {
 
-  	function addtocart8()
-  	{
-  	var ul = document.getElementById("itemlist");
-    var phone = document.getElementById("11");
-    var li = document.createElement("li");
-    li.setAttribute('id',phone.name);
-    li.appendChild(document.createTextNode(phone.name));
-    ul.appendChild(li);
-    alert(phone.name + " has been added to the cart.");
-  	}
+            document.getElementById("row3").innerHTML = document.getElementById("8pro").name;
 
-  	function addtocart9()
-  	{
-  	var ul = document.getElementById("itemlist");
-    var phone = document.getElementById("s20");
-    var li = document.createElement("li");
-    li.setAttribute('id',phone.name);
-    li.appendChild(document.createTextNode(phone.name));
-    ul.appendChild(li);
-    alert(phone.name + " has been added to the cart.");
-  	}
+        }
+        function disp9() {
 
-  	function addtocart10()
-  	{
-  	var ul = document.getElementById("itemlist");
-    var phone = document.getElementById("echo");
-    var li = document.createElement("li");
-    li.setAttribute('id',phone.name);
-    li.appendChild(document.createTextNode(phone.name));
-    ul.appendChild(li);
-    alert(phone.name + " has been added to the cart.");
-  	}
+            document.getElementById("row3").innerHTML = document.getElementById("11").name;
 
-  	function addtocart11()
-  	{
-  	var ul = document.getElementById("itemlist");
-    var phone = document.getElementById("nest");
-    var li = document.createElement("li");
-    li.setAttribute('id',phone.name);
-    li.appendChild(document.createTextNode(phone.name));
-    ul.appendChild(li);
-    alert(phone.name + " has been added to the cart.");
-  	}
+        }
+        function disp10() {
 
-  	function addtocart12()
-  	{
-  	var ul = document.getElementById("itemlist");
-    var phone = document.getElementById("tuf");
-    var li = document.createElement("li");
-    li.setAttribute('id',phone.name);
-    li.appendChild(document.createTextNode(phone.name));
-    ul.appendChild(li);
-    alert(phone.name + " has been added to the cart.");
-  	}
+            document.getElementById("row3").innerHTML = document.getElementById("s20").name;
+
+        }
+        function disp11() {
+
+            document.getElementById("row4").innerHTML = document.getElementById("echo").name;
+
+        }
+        function disp12() {
+
+            document.getElementById("row4").innerHTML = document.getElementById("nest").name;
+
+        }
+        function disp13() {
+
+            document.getElementById("row4").innerHTML = document.getElementById("tuf").name;
+
+        }
+        function disp2() {
+            document.getElementById("row1").innerHTML = "Hover mouse to find out more...";
+            document.getElementById("row2").innerHTML = "Hover mouse to find out more...";
+            document.getElementById("row3").innerHTML = "Hover mouse to find out more...";
+            document.getElementById("row4").innerHTML = "Hover mouse to find out more...";
+        }
+
+        function addtocart() {
+            var ul = document.getElementById("itemlist");
+            var phone = document.getElementById("n20");
+            var li = document.createElement("li");
+            li.setAttribute('id', phone.name);
+            li.appendChild(document.createTextNode(phone.name));
+            ul.appendChild(li);
+            alert(phone.name + " has been added to the cart.");
+        }
+
+        function addtocart2() {
+            var ul = document.getElementById("itemlist");
+            var phone = document.getElementById("n20u");
+            var li = document.createElement("li");
+            li.setAttribute('id', phone.name);
+            li.appendChild(document.createTextNode(phone.name));
+            ul.appendChild(li);
+            alert(phone.name + " has been added to the cart.");
+        }
+
+        function addtocart3() {
+            var ul = document.getElementById("itemlist");
+            var phone = document.getElementById("c11");
+            var li = document.createElement("li");
+            li.setAttribute('id', phone.name);
+            li.appendChild(document.createTextNode(phone.name));
+            ul.appendChild(li);
+            alert(phone.name + " has been added to the cart.");
+        }
+
+        function addtocart4() {
+            var ul = document.getElementById("itemlist");
+            var phone = document.getElementById("nord");
+            var li = document.createElement("li");
+            li.setAttribute('id', phone.name);
+            li.appendChild(document.createTextNode(phone.name));
+            ul.appendChild(li);
+            alert(phone.name + " has been added to the cart.");
+        }
+
+        function addtocart5() {
+            var ul = document.getElementById("itemlist");
+            var phone = document.getElementById("se");
+            var li = document.createElement("li");
+            li.setAttribute('id', phone.name);
+            li.appendChild(document.createTextNode(phone.name));
+            ul.appendChild(li);
+            alert(phone.name + " has been added to the cart.");
+        }
+
+        function addtocart6() {
+            var ul = document.getElementById("itemlist");
+            var phone = document.getElementById("m31s");
+            var li = document.createElement("li");
+            li.setAttribute('id', phone.name);
+            li.appendChild(document.createTextNode(phone.name));
+            ul.appendChild(li);
+            alert(phone.name + " has been added to the cart.");
+        }
+
+        function addtocart7() {
+            var ul = document.getElementById("itemlist");
+            var phone = document.getElementById("8pro");
+            var li = document.createElement("li");
+            li.setAttribute('id', phone.name);
+            li.appendChild(document.createTextNode(phone.name));
+            ul.appendChild(li);
+            alert(phone.name + " has been added to the cart.");
+        }
+
+        function addtocart8() {
+            var ul = document.getElementById("itemlist");
+            var phone = document.getElementById("11");
+            var li = document.createElement("li");
+            li.setAttribute('id', phone.name);
+            li.appendChild(document.createTextNode(phone.name));
+            ul.appendChild(li);
+            alert(phone.name + " has been added to the cart.");
+        }
+
+        function addtocart9() {
+            var ul = document.getElementById("itemlist");
+            var phone = document.getElementById("s20");
+            var li = document.createElement("li");
+            li.setAttribute('id', phone.name);
+            li.appendChild(document.createTextNode(phone.name));
+            ul.appendChild(li);
+            alert(phone.name + " has been added to the cart.");
+        }
+
+        function addtocart10() {
+            var ul = document.getElementById("itemlist");
+            var phone = document.getElementById("echo");
+            var li = document.createElement("li");
+            li.setAttribute('id', phone.name);
+            li.appendChild(document.createTextNode(phone.name));
+            ul.appendChild(li);
+            alert(phone.name + " has been added to the cart.");
+        }
+
+        function addtocart11() {
+            var ul = document.getElementById("itemlist");
+            var phone = document.getElementById("nest");
+            var li = document.createElement("li");
+            li.setAttribute('id', phone.name);
+            li.appendChild(document.createTextNode(phone.name));
+            ul.appendChild(li);
+            alert(phone.name + " has been added to the cart.");
+        }
+
+        function addtocart12() {
+            var ul = document.getElementById("itemlist");
+            var phone = document.getElementById("tuf");
+            var li = document.createElement("li");
+            li.setAttribute('id', phone.name);
+            li.appendChild(document.createTextNode(phone.name));
+            ul.appendChild(li);
+            alert(phone.name + " has been added to the cart.");
+        }
 
 
 
-  </script>
+    </script>
 
 
 
